@@ -1,0 +1,6 @@
+DB_USERNAME: db-username
+DB_PASSWORD: db-password
+DB_HOST: db-host
+DB_PORT: db-port
+DB_NAME: db-name
+GRPC_PORT: grpc-port

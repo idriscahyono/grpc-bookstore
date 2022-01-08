@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package book;
+
+option go_package = "./;book";
+
+message Book{
+  int32 ID = 1;
+  string Title = 2;
+  string Author = 3;
+}
+
+message Publisher{
+  int32 ID = 1;
+  int32 BookID = 2;
+  string Name = 3;
+}
+
+message ListPublishers{
+  repeated Publisher listPublisher = 1;
+}
+
+message ID{
+  int32 ID = 1;
+}
+
+service BookService{
+  rpc CreateBook (Book) returns (Book) {}
+  rpc ReadBook (ID) returns (Book) {}
+  rpc UpdateBook (Book) returns (Book) {}
+  rpc DeleteBook (ID) returns (ID) {}
+  rpc ReadPublisher (ID) returns (ListPublishers) {}
+}
