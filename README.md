@@ -1,11 +1,11 @@
-# Book Store
-Simple CRUD with [Gin](https://github.com/gin-gonic/gin) Framework
+# GRPC Book Store
+Simple CRUD with [GRPC](https://grpc.io/)
 
 # Stack
 - [GO](https://go.dev/)
 - [MySQL](https://www.mysql.com/)
 - [GORM](https://gorm.io/index.html)
-- [Gin](https://github.com/gin-gonic/gin)
+- [GRPC](https://grpc.io/)
 - [Faker](https://github.com/bxcodec/faker)
 
 # How To Run
